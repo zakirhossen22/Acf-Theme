@@ -1,0 +1,146 @@
+/*
+Theme Name: ACf
+Theme URI: https://www.zakir.com/acf
+Author: zakir
+Author URI: https://www.zakir.com
+Description: we learn theme development.
+Tags: 
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.8.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wtd
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.navbar-nav li a {
+       font-size: 14px;
+       padding-top: 2.3rem;
+       padding-bottom: 2.3rem;
+       padding-left: 18px;
+       padding-right: 18px;
+       font-weight: 700;
+       color: #000000;
+       position: relative;
+       text-transform: uppercase;
+       opacity: 1 !important;
+       display: block;
+   }
+
+   .navbar-nav li a::before {
+       content:'';
+       position: absolute;
+       width: 100%;
+       height: 2px;
+       bottom: 0px;
+       left: 0;
+       background-color: #1ba12d;
+       visibility: hidden;
+       -webkit-transform: scaleX(0);
+       -ms-transform: scaleX(0);
+       transform: scaleX(0);
+       -webkit-transition: all 0.5s ease-in-out 0s;
+       -o-transition: all 0.5s ease-in-out 0s;
+       transition: all 0.5s ease-in-out 0s;
+       z-index: -1;
+   }
+   .navbar-nav li a:hover {
+       color: #1ba12d;
+   }
+   .navbar-nav li a:hover::before{
+          
+       visibility: visible;
+       background-color: #2a552f;
+       -webkit-transform: scaleX(1);
+       -ms-transform: scaleX(1);
+       transform: scaleX(1);
+          
+   }
+   .navbar-nav  li.current_page_item a{
+       color: #1ba12d;
+       visibility: visible;
+   }
+.wp-block-page-list {
+    margin: 0;
+    padding: 0;
+}
+   .list-unstyled h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+.list-unstyled li{
+    list-style: none;
+}
+.list-unstyled li {
+    padding: 4px 0px;
+    list-style: none;
+}
+
+.comment-body{
+    float: none !important;
+}
+.comment-body p{
+    margin-left: 5.5em;
+}
+.comment-meta{
+    margin-left: 5em !important;
+}
+.comment-meta .url {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+.reply{
+        width: 7em;
+        text-align: center;
+        margin-left: 7em;
+        color: rgba(0, 0, 0, 0.8);
+}
+.comment-author img{
+    width: 100%;  
+    height: auto;  
+}
+
+#commentform {
+    padding: 3rem;
+    background: #f8f9fd;
+}
+#commentform label {
+    display: block;
+    margin-bottom: 0.5rem;
+   
+}
+
+#commentform input,textarea {
+    width: 100%;
+    height: 52px !important;
+    color: #000000 !important;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding-left: 1em;
+}
+#commentform .form-submit{
+width: 30%;
+height: auto;
+cursor: pointer;
+
+
+}
+input#submit {
+    cursor: pointer;
+    background:#1ba12d ;
+    color: #fff !important;
+ 
+}
+p.comment-notes {
+    display: none;
+}
